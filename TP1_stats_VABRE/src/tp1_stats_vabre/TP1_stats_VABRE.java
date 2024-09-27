@@ -30,11 +30,11 @@ m=sc.nextInt();
 Random generateurAleat = new Random();
 
 for (int i=0; i<m ; i++){
-    int a = generateurAleat.nextInt(5);
+    int a = generateurAleat.nextInt(6);
     tab[a]+= 1;
 }
 for (int i=0; i<6; i++){
-    System.out.println( tab[i]);
+    System.out.println( "le numero " + (i+1) + " est tombe : " + tab[i]);
 }
     }
 }
