@@ -34,7 +34,10 @@ for (int i=0; i<m ; i++){
     tab[a]+= 1;
 }
 for (int i=0; i<6; i++){
-    System.out.println( "le numero " + (i+1) + " est tombe : " + tab[i]);
+    double b;
+    b =(tab[i]*(1.0)/m*(1.0))*100;
+    
+    System.out.println( "le numero " + (i+1) + " est tombe " + b + "% fois.");
 }
     }
 }
