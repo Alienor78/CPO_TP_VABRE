@@ -1,6 +1,6 @@
 /*
- * VABRE
- * Aliénor
+ * TP2
+ * Aliénor VABRE
  * 11/10/2024
  */
 package tp2_bieres_vabre;
