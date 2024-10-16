@@ -23,7 +23,7 @@ public class TP2_manip_VABRE {
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbcalories) ;
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbcalories) ;
         
-        // Q6 : la ligne 1 est correcte, la 2e ne convient pas car moussaka =/ Tartiflette.
+        // Q6 : les 2 ne convient pas car moussaka =/ Tartiflette.
         //NON
          Moussaka[] moussakas = new Moussaka[10];
          for (int i = 0; i < moussakas.length; i++) {
