@@ -13,7 +13,9 @@ public class Voiture {
     String marque;
     int puissanceCV;
     
-    public String Voiture(String unmodele, String unemarque, int unepuissance){
+    Personne Propriétaire = null;
+    
+    public  Voiture(String unmodele, String unemarque, int unepuissance){
         this.modèle = unmodele;      
         this.marque = unemarque;     
         this.puissanceCV = unepuissance;
@@ -21,8 +23,10 @@ public class Voiture {
     @Override
     public String toString (){
     String voiture_a_retourner;
-    return voiture_a_retourner = "La voiture a pour modele : " + modèle + "\n" + "pour marque : " + marque + "\n" + "pour puissance : " + puissanceCV ;
+    return voiture_a_retourner = "Modele : " + modèle + "\n" + "Marque : " + marque + "\n" + "Puissance : " + puissanceCV ;
     
     }
+    
+   
 }
 
