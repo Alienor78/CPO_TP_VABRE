@@ -27,5 +27,19 @@ public class Personne {
         String identite;
         return identite = "La personne se nomme : " + prenom + " " + nom ;
     }
-    
+    public boolean ajouter_voiture(Voiture voiture_a_ajouter){
+        if (voiture_a_ajouter.Propriétaire != null){
+            System.out.println( "La voiture appartient deja a quelqu'un !! ");
+            return false;
+        }
+        if (nbVoitures >=3){
+            System.out.println("Le proprietaire a trop de voitures. ");
+            return false;
+        }
+        liste_voiture[nbVoitures] = voiture_a_ajouter;  
+        voiture_a_ajouter.Propriétaire = this; 
+        nbVoitures++;  
+        System.out.println("La voiture a ete ajoutee avec succes !");
+        return true;
+    }
 }
