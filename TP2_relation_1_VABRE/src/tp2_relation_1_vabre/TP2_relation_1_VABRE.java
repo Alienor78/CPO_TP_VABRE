@@ -19,9 +19,25 @@ public class TP2_relation_1_VABRE {
         Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5 ) ;
         Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
         Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
+        
         Personne bob = new Personne("Bobby", "Sixkiller");
         Personne reno = new Personne("Reno", "Raines");
-        System.out.println("liste des voitures disponibles "+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
+        
+        //System.out.println("liste des voitures disponibles : " + "\n" + uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
+        
+        bob.liste_voiture[0] = uneClio ;
+        bob.liste_voiture[1] = une2008;
+        bob.nbVoitures = 2 ;
+        uneClio.Propriétaire = bob ;
+        une2008.Propriétaire = bob ;
+        System.out.println("la premiere voiture de Bob est : " + "\n" + bob.liste_voiture[0] + "\n" + "Et sa deuxieme est : " + "\n" + bob.liste_voiture[1]) ;
+        
+        reno.liste_voiture[0] = uneAutreClio ;
+        reno.liste_voiture[1] = uneMicra;
+        reno.nbVoitures = 2 ;
+        uneAutreClio.Propriétaire = reno ;
+        uneMicra.Propriétaire = reno ;
+        System.out.println("la premiere voiture de Reno est : " + "\n" + reno.liste_voiture[0] + "\n" + "Et sa deuxieme est : " + "\n" + reno.liste_voiture[1]) ;
 
     }
     
