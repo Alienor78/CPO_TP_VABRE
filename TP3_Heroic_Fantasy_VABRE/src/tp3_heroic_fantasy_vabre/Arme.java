@@ -15,6 +15,7 @@ public abstract class Arme {
     
     public Arme( String nom, int niveau){
         this.nom = nom;
+        
         if (niveau < 0) {
             
         }else{
@@ -24,6 +25,6 @@ public abstract class Arme {
     @Override
     public String toString (){
         String arme;
-        return arme = "l'arme est un/une " + nom + "de niveau d'attaque " + niveau;
+        return arme = "l'arme est " + nom + " et est de niveau " + niveau;
     }
 }
