@@ -1,5 +1,5 @@
 /*
- * TP2
+ * TP3
  * Aliénor VABRE
  * 15/10/2024
  */
@@ -12,12 +12,22 @@ package tp3_heroic_fantasy_vabre;
 public class Epee extends Arme{
     int indiceFinesse;
 
-    public Epee(int indiceFinesse, String nom , int niveau) {
+    /**
+     *
+     * @param nom
+     * @param niveau : niveau de l'épée
+     * @param indiceFinesse 
+     */
+    public Epee(String nom , int niveau, int indiceFinesse) {
         super(nom, niveau);
         this.indiceFinesse = indiceFinesse;
     }
-   
+    @Override
+    public String toString (){
+        String Epee;
+        return Epee = "l'arme est " + nom + ", est de niveau " + niveau + " et a un indice de finesse de " + indiceFinesse;
     }
-    
-    
 }
+    
+    
+
