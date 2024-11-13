@@ -5,6 +5,9 @@
  */
 package Personnages;
 
+import Armes.Arme;
+import java.util.ArrayList;
+
 /**
  *
  * @author alien
@@ -18,6 +21,16 @@ public abstract class Personnages {
         this.vie = vie;
     }
     
+        ArrayList<Arme> sacados = new ArrayList<Arme>();
+        
+        public void Ajout(Arme){
+            int a = sacados.size();
+            if (a<6);
+            sacados.add(Arme);
+            
+        }
+        
+            
     
     @Override
     public String toString (){
