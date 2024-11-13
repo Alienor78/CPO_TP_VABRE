@@ -25,6 +25,6 @@ public abstract class Arme {
     @Override
     public String toString (){
         String arme;
-        return arme = "l'arme est " + nom + " et est de niveau " + niveau;
+        return arme = "l'arme est " + nom + " et est de niveau " + niveau + "/n";
     }
 }

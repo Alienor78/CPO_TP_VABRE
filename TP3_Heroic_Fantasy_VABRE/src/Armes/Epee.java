@@ -24,11 +24,7 @@ public class Epee extends Arme{
         super(nom, niveau);
         this.indiceFinesse = indiceFinesse;
     }
-    @Override
-    public String toString (){
-        String Epee;
-        return Epee = "l'arme est " + nom + ", est de niveau " + niveau + " et a un indice de finesse de " + indiceFinesse;
-    }
+  
 }
     
     

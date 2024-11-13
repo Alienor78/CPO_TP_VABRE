@@ -18,9 +18,5 @@ public class Baton extends Arme{
         super(nom, niveau);
         this.age = age;
     }
-    @Override
-    public String toString (){
-        String Epee;
-        return Epee = "l'arme est " + nom + ", est de niveau " + niveau + " et a " + age + " ans";
-}
+   
 }
